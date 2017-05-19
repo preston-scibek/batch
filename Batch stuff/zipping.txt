@@ -1,0 +1,47 @@
+MANUALLY CREATING AND ARCHIVING FILES
+in a hierarchical file system where the files and directories resemble a tree a directory is a folder where files are stored. A sub directory is a directory inside another directory
+lossless compression allows the original data to be perfectly reconstructed from the compressed stuff zip files are means of sending large files and so would need to be able to reconstruct the original upon decompression
+multimedia files that are already highly compressed would not be compressed in a zip file and would just take up space
+zipping a zip folder would not help and in cases the zipped zip file actually got bigger
+huffman coding assigns code to characters based on the frequency of appearance, huffman code uses a specific method for choosing the representation of each symbol resulting in a prefix code where the bit string representing each symbol is not the prefix of of the bit string of any other symbol the more frequent the appearance of a symbol the higher on the tree it is a a huffman tree has the lowest frequencies on the bottom with the next lowest on the next row etc,a huffman tree is created by taking the two lowest frequencies and putting it on the bottom row, then a new variable with the frequencies of the two lower frequencies is created, then the next row is the new variable and the next lowest frequencies, again a new variable is created, the process repeats until the tree is connected and all symbols have been used.
+-----------------------------------------------------
+NAVIGATING VIA CMD PROMPT
+cd C:\Users\Preston\Desktop\Foo\Bar\Baz
+cd C:\Users\Preston\Desktop\Foo
+cd C:\Users\Preston\Documents
+dir displays data about the current directory including files inside as well as names of subdirectories 
+echo "hi!" displays "hi!" in cmd prompt
+echo "hi!" > welcome.txt creates a text file in the directory and it has the text "hi!" in it
+dir *.txt displays information about files with .txt in them
+echo "bye" >> welcome.txt displays "bye" on a new line in the welcome.txt file
+echo "bye!" > welcome.txt replaces all text in welcome .txt with "bye!"
+type welcome.txt displays the text in welcome.txt in the cmd prompt display
+mkdir TextFiles creates a folder called TextFiles inside Foo
+move welcome.txt TextFiles moves the welcome.txt file to the folder TextFiles and displays 1 file moved in cmd prompt
+erase TextFiles\welcome.txt deletes welcome.txt from TextFiles
+if you type cd Text then hit tab cmd prompt auto completes the directory and adds Files to the Text
+to move all the txt files in TextFiles to Baz type move *.txt C:\Users\Preston\Desktop\Foo\Bar\Baz
+----------------------------------------------------------------------
+LOOPS
+Numerical For Loop
+FOR /L %%I IN (1,1,10) DO echo %%I
+Question, what do the numbers represent in (,,)?
+the /L tells the for loop to compare the range of values the numbers represent the start value the step number and the end number 
+PING -n 2 127.0.0.1 > nul
+Question: Why do I specify 2, 127.0.0.1, and nul?
+2 is how many pings to send 127.0.0.1 is the ip to send the ping to and nul sends the output of the command to nowhere so you dont see the output of the ping
+-------------------------
+COMMAND LINE ARGUMENTS
+having @echo off
+echo %1 is cool.
+echo %2 is cooler.
+pause
+saved in looping.bat and typing
+looping.bat Zach Chess
+makes cmd prompt say zach is cool. chess is cooler
+looping.bat zach makes cmd prompt say zach is cool  is cooler
+looping.bat zach chess checkers makes cmd prompt say zach is cool chess is cooler
+A command-line argument or parameter is an item of information provided to a program when it is started.
+command line argument are used to extract information about your environment settings or to provide additional data to your code
+if you click on a file and drag it on top of your batch script it executes the batch script
+

@@ -1,0 +1,1 @@
+madlib.bat > fileforbatchstuff.txt

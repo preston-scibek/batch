@@ -1,0 +1,9 @@
+• In Batch, what does < do? (this is NOT to be confused with >) - reads the command input from a file instead of reading it from the keyboard
+• In Batch, what is Standard Output? numeric handle is 1, where the default output of commands go, is sent to the command prompt window
+• In Batch, what is Standard Error? numeric handle is 2, error output is sent to the command prompt window
+• In Batch, what is Standard Input? numeric handle is 0, input for commands is read from the keyboard
+• How can you make echo send output to the Standard Error instead of Standard Output? echo blah 1>&2
+• What is the NUL device in Batch? Why use it? the null device is a device file that discards all data written to it but reports that the write operation succeeded, used to discard output of commands or to check if directories exist
+• How can I silence both the Standard Output and Standard Error?  use 1>nul 2>nul
+• What is the Console? console is an environment where one can run commands 
+• What is piping? Reads the output from one command and writes it to the input of another command.
